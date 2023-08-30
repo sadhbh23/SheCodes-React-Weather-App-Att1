@@ -1,0 +1,17 @@
+form input {
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+form input.search-button {
+  background-color: greenyellow;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

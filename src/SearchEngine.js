@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   const [searchInput, setSearchInput] = useState(null);
@@ -38,7 +39,7 @@ export default function SearchEngine() {
         placeholder="Enter a city..."
         onChange={updateInput}
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" className="search-button" />
     </form>
   );
 
@@ -46,6 +47,7 @@ export default function SearchEngine() {
     return (
       <div className="SearchEngine">
         {form}
+        <h3>In {searchInput} it is...</h3>
         <ul>
           <li>{weatherInfo.temperature}°C</li>
           <li>{weatherInfo.description}</li>

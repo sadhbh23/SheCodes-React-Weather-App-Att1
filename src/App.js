@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>React Weather Application</h1>
+        <h2>Search a City!</h2>
         <SearchEngine />
         <img src={logo} className="App-logo" alt="logo" />
       </header>
